@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
+import {
+  Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+
+import history from '../history'
+import Home from './pages/home';
 
 export default class App extends Component {
   render() {
     return (
-      <div className='app'>
-        <h1>DevCamp React Starter</h1>
-        <h2>React Redux Router</h2>
-      </div>
+      <Router history={history}>
+        <div className='container'>
+          <Switch>
+            <Route exact path='/' component={Home} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
