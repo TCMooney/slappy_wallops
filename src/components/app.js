@@ -7,6 +7,7 @@ import {
 
 import history from '../history'
 import Home from './pages/home';
+import NavBar from './navigation/nav-bar';
 
 export default class App extends Component {
   render() {

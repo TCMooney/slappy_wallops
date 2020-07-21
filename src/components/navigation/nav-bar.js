@@ -10,11 +10,11 @@ export default class NavBar extends Component {
         </div>
         <div className='nav-right'>
           <div className='nav-list'>
-            <Link to='/'>Home</Link>
-            <Link to='/'>Menu</Link>
-            <Link to='/'>Blog</Link>
-            <Link to='/'>About</Link>
-            <Link to='/'>Contact</Link>
+            <Link className='nav-link__home' to='/'>Home</Link>
+            <Link className='nav-link__menu' to='/menu'>Menu</Link>
+            <Link className='nav-link__blog' to='/blog'>Blog</Link>
+            <Link className='nav-link__about' to='/about'>About</Link>
+            <Link className='nav-link__contact' to='/contact'>Contact</Link>
           </div>
         </div>
       </div>
