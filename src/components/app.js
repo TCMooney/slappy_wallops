@@ -14,6 +14,7 @@ export default class App extends Component {
     return (
       <Router history={history}>
         <div className='container'>
+          <NavBar />
           <Switch>
             <Route exact path='/' component={Home} />
           </Switch>
